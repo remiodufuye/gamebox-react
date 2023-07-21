@@ -1,7 +1,9 @@
-import UserList from "./components/UserList";
+
+import Message from './Message'
 
 function App() {
-  return <UserList />;
+  return <div><Message /></div>
 }
 
-export default App;
+
+export default App ;
