@@ -1,4 +1,5 @@
 function ListGroup() {
+  const items = [];
   return (
     <>
       <ul className="list-group">
