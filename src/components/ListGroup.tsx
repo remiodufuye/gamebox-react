@@ -2,8 +2,7 @@ import { useState } from "react";
 
 function ListGroup() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-  let selectedIndex = 0;
-  const arr = useState(-1);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <>
@@ -19,7 +18,7 @@ function ListGroup() {
             }
             key={item}
             onClick={() => {
-              selectedIndex = index;
+              setSelectedIndex(index);
             }}
           >
             {item}
