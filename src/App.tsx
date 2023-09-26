@@ -1,18 +1,10 @@
 import { useState } from "react";
-import Button from "./components/Button";
-import Alert from "./components/Alert";
-import ListGroup from "./components/ListGroup";
+import Button from "./components/Button/Button";
 
 function App() {
-  const items = ["New York", "Miami", "Los Angeles", "San Francisco"];
-
   return (
     <div>
-      <ListGroup
-        heading="Miami"
-        items={items}
-        onSelectItem={() => console.log("Clicked Item")}
-      />
+      <Button onClick={() => {}}> My Button </Button>
     </div>
   );
 }
