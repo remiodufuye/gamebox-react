@@ -1,10 +1,17 @@
 import { useState } from "react";
-import Like from "./components/Like";
 
 function App() {
+  const [isVisible, setVisibility] = useState(false);
+  const [isApproved, setApproved] = useState(true);
+
+  const handleClick = () => {
+    setVisibility(true);
+    console.log(isVisible);
+  };
+
   return (
     <div>
-      <Like onClick={() => console.log("Clicked")} />
+      <button onClick={handleClick}>Show</button>
     </div>
   );
 }
