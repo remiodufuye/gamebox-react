@@ -1,17 +1,19 @@
 import { useState } from "react";
 
 function App() {
-  const [isVisible, setVisibility] = useState(false);
-  const [isApproved, setApproved] = useState(true);
+  const [drink, setDrink] = useState({
+    title: "Americano",
+    price: 5,
+  });
 
   const handleClick = () => {
-    setVisibility(true);
-    console.log(isVisible);
+    setDrink({ ...drink, price: 6 });
   };
 
   return (
     <div>
-      <button onClick={handleClick}>Show</button>
+      {drink.price}
+      <button onClick={handleClick}>Click Me</button>
     </div>
   );
 }
