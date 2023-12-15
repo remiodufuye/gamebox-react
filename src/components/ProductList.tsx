@@ -1,12 +1,14 @@
 import React , {useState,useEffect} from 'react'
 
+const ProductList = ({category}:{category:string}) => {
 
-const ProductList = () => {
+  const [products,setProducts] = useState<string[]>([])
 
- const [products,setProducts] = useState([])
+  useEffect(()=>{
+    console.log('Fetching Products in',category);
+    setProducts(['Clothing','Household'])
+  },[category]);
 
- useEffect( () => {} )
- 
   return (
     <div>ProductList</div>
   )
